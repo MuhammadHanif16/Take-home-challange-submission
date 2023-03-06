@@ -1,0 +1,87 @@
+Scenario Outline  Open Whatsapp Dekstop
+Given  Open Whatsapp Dekstop Application
+When  The user opens Whatsapp Mobile Application
+And  The user scans the QR Code using Whatsapp Mobile Application
+Then  Whatsapp Dekstop page is opened
+
+Scenario Outline send messages using WhatsApp Dekstop
+Given the user sends a message on the WhatsApp Dekstop Application
+When User send messages on the Whatsapp Mobile Application
+And The user searches for the contact to whom the message will be sent
+And The user writes the message to be delivered
+And The user click the airplane icon in the lower right corner
+Then message sent
+
+Scenario Outline edit profile on Whatsapp Dekstop
+Given edit profile on Whatsapp Dekstop
+When user edit profile on Whatsapp Dekstop
+And the user clicks the profile photo
+And the user is on the profile homepage
+And the user click on the photo, it will say change the profile photo
+And user select upload photo
+And the user select a photo in the laptop document
+And user click open
+And user set the position of the photo
+And user click “V” sign
+Then photo successfully replaced
+
+Scenario Outline see contact story
+Given see whatsApp story on WhatsApp dekstop
+When the user see stories
+And the user clicks “status”
+And the user can click on the contact, who will see the story
+Then stories can be seen
+
+Scenario Outline Whatsapp chat filter
+Given do a chat filter on WhatsApp dekstop
+When the user filter chat
+And the user clicks the filter icon
+Then the user will be shown unread chats
+
+Scenario Outline create a new group
+Given create a new group on Whatsapp Dekstop
+When user create group
+And the user click menu icon
+And the user click new group
+And the user select group members
+And the user click the icon “→”
+And the user can add a group icon, write the subject of the group and can set the duration of the message in the temporary message menu
+And the user click the icon “V”
+Then group created successfully
+
+Scenario Outline create a new community
+Given create a new community on Whatsapp Dekstop
+When user create new community
+And the user click the menu icon
+And the user click new community
+And the user can add a community icon, community name, and community description
+And the user click the “→” icon
+And the user adds a group
+And the user click the “V” icon
+Then new community created succesfully
+
+Scenario Outline delete chat feature
+Given the user will delete the chat
+When user delete chat
+And the user click the “V” icon bellow when the chat enters
+And the user select “Delete Chat”
+And : the user click “DELETE CHAT”
+Then chat has been successfully deleted
+
+Scenario Outline archive feature
+Given the user will archive a chat
+When the user archives messages
+And the user click the “V” icon bellow when the chat enters
+And the user select “Archive chat”
+Then the user successfully archived the selected chat
+
+10.	Scenario Outline starred message feature
+Given put an asterisk on the selected message
+When user select message
+And the user selects which chat will be given an asterisk
+And the user clicks “menu”
+And the user click “message options”
+And the user chooses which messages to flag
+And the user click the “STAR“ icon
+Then the message has been marked with a star
+
